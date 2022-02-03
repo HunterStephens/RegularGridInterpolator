@@ -85,7 +85,7 @@ T RegularGridInterpolator2D<T>::operator()(T xin, T yin) {
         i = 0;
     }
     else if (i >= ny-1){
-        i = i - 1;
+        i = ny-2;
     }
 
     T** A = Q[i][j];
